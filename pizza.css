@@ -4,26 +4,26 @@ body {
 }
 
 
-.pizza{
+.pizza {
     border: 3px solid#550527;
     padding: 1em;
     margin: 1em;
     margin-bottom: 3em;
     margin-left: 0;
     border-radius: 2em;
-    width: 50%;
-   
+    width: 80%;
+
 }
 
 .heading {
-text-align: center;
-border: 1px solid #550527;
+    text-align: center;
+    border: 1px solid #550527;
     border-radius: 2em;
 
 }
 
 .medium_pizza {
-    background-color: #A10702 ;
+    background-color: #A10702;
     flex: 2;
 }
 
@@ -47,21 +47,28 @@ border: 1px solid #550527;
     border-radius: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    .left{
+    flex: 1;
+
+    .left {
         justify-self: flex-start;
     }
 
-    .right{
+    .right {
         justify-self: flex-end;
-        margin-bottom: 1em;
     }
 }
 
 
-@media (min-width: 960px){
-        .pizzas{
-            display: flex;
-        }
+@media (min-width: 960px) {
+
+    .pizzas {
+        display: flex;
+    }
 }
 
+@media (max-width: 960px) {
 
+    .details {
+        width: 80%;
+    }
+}
